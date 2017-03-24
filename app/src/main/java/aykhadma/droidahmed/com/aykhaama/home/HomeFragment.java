@@ -91,7 +91,7 @@ public class HomeFragment extends Fragment implements OnClickHomeMenu,OnClickHom
         onAddCart = this;
         databaseHelper = new DatabaseHelper(getActivity());
         cartItemsModify = new ArrayList<>();
-        cartAdd();
+
         try {
             String token = FirebaseInstanceId.getInstance().getToken();
             Log.d("pppp",token);
@@ -486,21 +486,5 @@ Log.d("uuuooo",featuredHomes.size()+"");
         });
     }
 
-    private void cartAdd(){
-        MainActivity mainActivity = (MainActivity) getActivity();
-        ImageView imgCart = (ImageView) mainActivity.findViewById(R.id.imgCart);
-        imgCart.setVisibility(View.VISIBLE);
-        imgCart.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-//                if(!new StoreData(getActivity()).getToken().equals("")) {
-                    FragmentManager fm = getActivity().getSupportFragmentManager();
-                    FragmentTransaction ft = fm.beginTransaction();
-                    ft.add(R.id.main, new ShopCartMain()).addToBackStack("").commit();
-//                }else{
-//                    Toast.makeText(getActivity(),"you need to login first",Toast.LENGTH_LONG).show();
-//                }
-            }
-        });
-    }
+
 }

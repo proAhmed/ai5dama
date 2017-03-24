@@ -34,6 +34,7 @@ public class SetDataForLists {
         ArrayList<Integer> home = new ArrayList<>();
         home.add(R.drawable.home_icon);
         home.add(R.drawable.offers_icon);
+        home.add(R.drawable.shoppingcar);
         home.add(R.drawable.customer_service);
         home.add(R.drawable.profile_icon);
 

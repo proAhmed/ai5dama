@@ -80,7 +80,6 @@ ImageView imageToggleCategory,imageToggle,imgLogo,imgCart;
         }
 
 
-        imgCart = (ImageView) findViewById(R.id.imgCart);
 
 
     }
@@ -130,10 +129,18 @@ ImageView imageToggleCategory,imageToggle,imgLogo,imgCart;
                 ft.commit();
                 break;
             case 2:
+                ShopCartMain fragmentHome = new ShopCartMain();
+                FragmentManager fms = getSupportFragmentManager();
+                FragmentTransaction fts = fms.beginTransaction();
+                fts.add(R.id.main, fragmentHome,"");
+                fts.commit();
+
+                    break;
+            case 3:
                 ft.add(R.id.main, new CustomerServiceMain()).addToBackStack("");
                 ft.commit();
                 break;
-            case 3:
+            case 4:
                 if(new StoreData(this).getActivate()==0){
                     Intent intent = new Intent(this, Login.class);
                     startActivity(intent);

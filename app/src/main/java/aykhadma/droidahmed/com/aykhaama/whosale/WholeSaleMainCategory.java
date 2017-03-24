@@ -57,8 +57,7 @@ public class WholeSaleMainCategory extends Fragment implements OnWholeSaleClick 
         Bundle bundle = getArguments();
        id = bundle.getInt("id",0);
         declare();
-        cartAdd();
-        searchAction();
+         searchAction();
         return view;
     }
     private void declare(){
@@ -207,21 +206,7 @@ public class WholeSaleMainCategory extends Fragment implements OnWholeSaleClick 
         }
     }
 
-    private void cartAdd(){
-        MainActivity mainActivity = (MainActivity) getActivity();
-        ImageView imgCart = (ImageView) mainActivity.findViewById(R.id.imgCart);
-        imgCart.setVisibility(View.VISIBLE);
-        imgCart.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
 
-                    FragmentManager fm = getActivity().getSupportFragmentManager();
-                    FragmentTransaction ft = fm.beginTransaction();
-                    ft.add(R.id.main, new ShopCartMain()).addToBackStack("").commit();
-
-            }
-        });
-    }
 
     @Override
     public void onResume() {

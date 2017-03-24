@@ -41,17 +41,7 @@
                 android:layout_marginLeft="8dp"
                 android:src="@drawable/logo_icon"
                 android:visibility="visible"/>
-            <ImageView
-                android:id="@+id/imgCart"
-                android:layout_width="40dp"
-                android:layout_height="wrap_content"
-                android:src="@drawable/shoppingcar"
-                android:layout_alignParentBottom="true"
-                android:layout_marginLeft="20dp"
-                android:layout_marginStart="20dp"
-                android:visibility="gone"
-                android:layout_toRightOf="@+id/imageToggleCategory"
-                android:layout_toEndOf="@+id/imageToggleCategory" />
+
 
             <TextView
                 android:id="@+id/textTitle"
