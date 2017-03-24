@@ -202,7 +202,7 @@ public class WholeSaleSubCategory  extends Fragment implements OnWholeSaleClick 
         }
     }
 
-   
+
 
     @Override
     public void onResume() {

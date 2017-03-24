@@ -92,7 +92,6 @@ public class ShopProductDetails extends Fragment implements OnShopMainClick,OnAd
         cartItemsModify = new ArrayList<>();
         Bundle bundle= getArguments();
         id =bundle.getInt("id",0);
-        cartAdd();
 
         try {
             if ("search".equals(bundle.getString("key"))) {
@@ -557,20 +556,7 @@ public class ShopProductDetails extends Fragment implements OnShopMainClick,OnAd
         }
     }
 
-    private void cartAdd(){
-        MainActivity mainActivity = (MainActivity) getActivity();
-        ImageView imgCart = (ImageView) mainActivity.findViewById(R.id.imgCart);
-        imgCart.setVisibility(View.VISIBLE);
-        imgCart.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                FragmentManager fm = getActivity().getSupportFragmentManager();
-                FragmentTransaction ft = fm.beginTransaction();
-                ft.add(R.id.main, new ShopCartMain()).addToBackStack("").commit();
 
-            }
-        });
-    }
 
     @Override
     public void onResume() {

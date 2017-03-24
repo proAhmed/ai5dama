@@ -55,8 +55,7 @@ public class ShopCategory extends Fragment implements OnShopMainClick {
         declare();
         category();
         searchAction();
-        cartAdd();
-        return view;
+         return view;
     }
     private void declare(){
         shoppingCategoryItemses = new ArrayList<>();
@@ -195,20 +194,7 @@ private void searchAction(){
                      getActivity());
         }
     }
-    private void cartAdd(){
-        MainActivity mainActivity = (MainActivity) getActivity();
-        ImageView imgCart = (ImageView) mainActivity.findViewById(R.id.imgCart);
-        imgCart.setVisibility(View.VISIBLE);
-        imgCart.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                     FragmentManager fm = getActivity().getSupportFragmentManager();
-                    FragmentTransaction ft = fm.beginTransaction();
-                    ft.add(R.id.main, new ShopCartMain()).addToBackStack("").commit();
 
-            }
-        });
-    }
     @Override
     public void onResume() {
         super.onResume();

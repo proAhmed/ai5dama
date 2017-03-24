@@ -92,8 +92,7 @@ public class ShopListProduct extends Fragment implements OnShopMainClick ,OnList
         }
         onAddItem = this;
         onAddCart = this;
-        cartAdd();
-        searchAction();
+         searchAction();
         subCategory();
         return view;
     }
@@ -502,20 +501,6 @@ public class ShopListProduct extends Fragment implements OnShopMainClick ,OnList
         }
     }
 
-    private void cartAdd(){
-        MainActivity mainActivity = (MainActivity) getActivity();
-        ImageView imgCart = (ImageView) mainActivity.findViewById(R.id.imgCart);
-        imgCart.setVisibility(View.VISIBLE);
-        imgCart.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                    FragmentManager fm = getActivity().getSupportFragmentManager();
-                    FragmentTransaction ft = fm.beginTransaction();
-                    ft.add(R.id.main, new ShopCartMain()).addToBackStack("").commit();
-
-            }
-        });
-    }
 
     @Override
     public void onResume() {

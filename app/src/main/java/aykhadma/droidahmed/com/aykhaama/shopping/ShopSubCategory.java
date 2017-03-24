@@ -54,8 +54,7 @@ public class ShopSubCategory extends Fragment implements  OnShopMainClick{
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         view = inflater.inflate(R.layout.shop_sub_category,container,false);
         declare();
-        cartAdd();
-        onShopMainClick = this;
+         onShopMainClick = this;
         Bundle bundle = getArguments();
         id =  bundle.getInt("id",1);
         subCategory();
@@ -189,20 +188,7 @@ public class ShopSubCategory extends Fragment implements  OnShopMainClick{
         }
     }
 
-    private void cartAdd(){
-        MainActivity mainActivity = (MainActivity) getActivity();
-        ImageView imgCart = (ImageView) mainActivity.findViewById(R.id.imgCart);
-        imgCart.setVisibility(View.VISIBLE);
-        imgCart.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                     FragmentManager fm = getActivity().getSupportFragmentManager();
-                    FragmentTransaction ft = fm.beginTransaction();
-                    ft.add(R.id.main, new ShopCartMain()).addToBackStack("").commit();
 
-            }
-        });
-    }
 
     @Override
     public void onResume() {

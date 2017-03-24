@@ -104,8 +104,7 @@ public class HomeFragment extends Fragment implements OnClickHomeMenu,OnClickHom
         }
         Log.d("pppuu", new StoreData(getActivity()).getDeviceId());
 
-        cartAdd(view);
-        initPager(view);
+         initPager(view);
         initMenu(view);
         initBottom(view);
         //imageArrayIcon
@@ -470,21 +469,7 @@ Log.d("uuuooo",featuredHomes.size()+"");
         }
     }
 
-    private void cartAdd(View view){
-        ImageView imgCart = (ImageView) view.findViewById(R.id.imgCart);
-        imgCart.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                if(!new StoreData(getActivity()).getToken().equals("")) {
-                    FragmentManager fm = getActivity().getSupportFragmentManager();
-                    FragmentTransaction ft = fm.beginTransaction();
-                    ft.add(R.id.main, new ShopCartMain()).addToBackStack("").commit();
-                }else{
-                    Toast.makeText(getActivity(),"you need to login first",Toast.LENGTH_LONG).show();
-                }
-            }
-        });
-    }
+
 
 
 }
