@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:background="@drawable/white_background"
+    android:orientation="vertical"
+    android:layout_margin="10dp"
+    android:layout_height="wrap_content">
+    <VideoView
+        android:id="@+id/vdItem"
+        android:layout_width="match_parent"
+        android:layout_height="213dp" />
+    <TextView
+        android:id="@+id/tvVideoName"
+        android:layout_width="wrap_content"
+        android:text="Toyota Corolla 2016 ads"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:textSize="18sp"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/tvVideoLikes"
+        android:layout_width="wrap_content"
+        android:text="1555 views"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+<ImageView
+    android:layout_width="40dp"
+    android:layout_marginLeft="10dp"
+    android:layout_gravity="center_vertical"
+    android:layout_marginRight="5dp"
+    android:src="@drawable/like_icon"
+    android:layout_height="wrap_content"
+    android:id="@+id/imgLike" />
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_marginRight="5dp"
+    android:layout_marginLeft="5dp"
+    android:textSize="17sp"
+    android:layout_gravity="center_vertical"
+    android:text="200"
+    android:layout_height="wrap_content"
+    android:id="@+id/tvLike" />
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_marginRight="8dp"
+            android:src="@drawable/unlike_icon"
+            android:layout_marginLeft="8dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="2dp"
+             android:layout_height="wrap_content"
+            android:id="@+id/imgDislike" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:textSize="17sp"
+            android:layout_gravity="center_vertical"
+            android:text="10"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvDislike" />
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/share_icon"
+            android:layout_height="wrap_content"
+            android:id="@+id/imgShare" />
+
+        <ImageView
+            android:layout_width="40dp"
+            android:src="@drawable/favorite_icon"
+            android:layout_marginRight="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/imgFavorite" />
+
+        <Button
+            android:layout_width="120dp"
+            android:background="@drawable/see_more_bar"
+            android:text="see more"
+            android:layout_gravity="center_vertical"
+            android:textColor="#fff"
+            android:textSize="13sp"
+            android:layout_marginLeft="25dp"
+             android:layout_height="25dp"
+            android:id="@+id/btnSeeMore" />
+    </LinearLayout>
+</LinearLayout>
+</LinearLayout>

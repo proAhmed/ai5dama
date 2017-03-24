@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_margin="5dp"
+    android:background="@drawable/white_background"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_margin="10dp"
+        android:gravity="center_horizontal"
+         android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="@dimen/_300sdp"
+            android:layout_gravity="center_horizontal"
+
+            android:layout_height="@dimen/_120sdp"
+
+            android:src="@drawable/img_company"
+            android:id="@+id/imgCompanies" />
+    </LinearLayout>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:gravity="center_horizontal"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="match_parent">
+<aykhadma.droidahmed.com.aykhaama.controller.MyTextView
+    android:id="@+id/TvHotelName"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:layout_marginTop="@dimen/_17sdp"
+    android:text="Official Adidas Store in Kuwit contact"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_margin="@dimen/_10sdp"
+         >
+
+        <ImageView
+            android:layout_width="@dimen/_16sdp"
+            android:src="@drawable/mail_icon"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/_8sdp"
+            android:layout_marginRight="@dimen/_8sdp"
+            android:layout_height="@dimen/_16sdp" />
+        <TextView
+            android:id="@+id/TvHotelEmail"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:textSize="@dimen/_16sdp"
+            android:layout_height="wrap_content"
+            android:text="info@adidas.com"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:gravity="center_horizontal"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="5dp"
+        android:layout_height="wrap_content"
+        >
+        <ImageView
+            android:layout_width="@dimen/_16sdp"
+            android:layout_height="@dimen/_16sdp"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="5dp"
+            android:src="@drawable/call_icon"/>
+        <TextView
+            android:id="@+id/TvHotelPhone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:textSize="@dimen/_16sdp"
+            android:text="009- 25445 "/>
+        <ImageView
+            android:layout_width="@dimen/_16sdp"
+            android:src="@drawable/website_icon"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_height="@dimen/_16sdp" />
+        <TextView
+            android:id="@+id/TvHotelWebsite"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="2dp"
+            android:textSize="@dimen/_16sdp"
+            android:layout_marginRight="5dp"
+            android:layout_height="wrap_content"
+            android:text="wwww.adidas.com"/>
+    </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

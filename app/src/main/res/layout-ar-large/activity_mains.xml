@@ -1,0 +1,111 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical"
+    >
+    <LinearLayout
+        android:id="@+id/linTop"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true"
+        android:layout_height="wrap_content">
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@color/dark_red" >
+            <ImageView
+                android:id="@+id/imageToggleCategory"
+                android:layout_width="45dp"
+                android:layout_height="35dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="16dp"
+                android:src="@drawable/serch_icon" />
+            <aykhadma.droidahmed.com.aykhaama.controller.MyTextView
+                android:id="@+id/title_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:textAllCaps="true"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#fff"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/logo"
+                android:layout_width="90dp"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="8dp"
+                android:src="@drawable/logo_icon"
+                android:visibility="visible"/>
+            <ImageView
+                android:id="@+id/imgCart"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/shoppingcar"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginStart="20dp"
+                android:visibility="gone"
+                android:layout_toRightOf="@+id/imageToggleCategory"
+                android:layout_toEndOf="@+id/imageToggleCategory" />
+
+            <aykhadma.droidahmed.com.aykhaama.controller.MyTextView
+                android:id="@+id/textTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:textStyle="bold"
+                android:layout_marginLeft="8dp"
+                android:textSize="26sp"
+                android:textColor="#fff"
+                android:layout_marginTop="10dp"
+                android:visibility="gone"/>
+            <ImageView
+                android:id="@+id/imageToggle"
+                android:layout_width="45dp"
+                android:layout_height="26dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="16dp"
+                android:src="@drawable/filter_list_icon" />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/reSearch"
+            android:layout_width="wrap_content"
+            android:visibility="gone"
+            android:layout_height="40dp">
+            <EditText
+                android:id="@+id/edSearch"
+                android:imeOptions="actionSearch"
+                android:singleLine="true"
+                android:inputType="text"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+
+                android:layout_toRightOf="@+id/imgSearch"
+                android:layout_toEndOf="@+id/imgSearch" />
+            <ImageView
+                android:id="@+id/imgSearch"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/serch_icon"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <FrameLayout android:id="@+id/main" android:layout_width="match_parent"
+        android:layout_below="@+id/linTop"
+        android:layout_above="@+id/reBottom"
+        android:layout_height="match_parent" />
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/reBottom"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/transparent"
+        android:cacheColorHint="@android:color/transparent"
+        />
+</RelativeLayout>

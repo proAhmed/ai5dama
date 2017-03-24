@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_margin="10dp"
+    android:background="@drawable/white_background"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_margin="10dp"
+         android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+
+            android:src="@drawable/img_company"
+            android:id="@+id/imgCompanies" />
+    </LinearLayout>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical" android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+<TextView
+    android:id="@+id/tvCompanyName"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:layout_marginTop="15dp"
+    android:text="Official Adidas Store in Kuwit contact"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+         >
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="3dp"
+            android:src="@drawable/location_icon"/>
+        <TextView
+            android:id="@+id/TvCompanyLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:text="Marina Mall"/>
+        <ImageView
+            android:layout_width="16dp"
+            android:src="@drawable/mail_icon"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"
+            android:layout_height="16dp" />
+        <TextView
+            android:id="@+id/TvCompanyEmail"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:textSize="14sp"
+            android:layout_height="wrap_content"
+            android:text="info@adidas.com"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+ android:layout_marginLeft="5dp"        android:layout_height="wrap_content"
+        >
+        <ImageView
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="5dp"
+            android:src="@drawable/call_icon"/>
+        <TextView
+            android:id="@+id/TvCompanyPhone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:text="009- 25445 "/>
+        <ImageView
+            android:layout_width="15dp"
+            android:src="@drawable/website_icon"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_height="15dp" />
+        <TextView
+            android:id="@+id/TvCompanyWebsite"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="2dp"
+            android:textSize="14sp"
+            android:layout_marginRight="5dp"
+            android:layout_height="wrap_content"
+            android:text="wwww.adidas.com"/>
+    </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

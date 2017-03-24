@@ -1,0 +1,420 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#fff"
+    android:layout_height="match_parent">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#fff"
+    android:orientation="vertical" android:layout_width="match_parent"
+     android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:background="@color/dark_red"
+        android:layout_weight="3">
+<ImageView
+    android:layout_width="0dp"
+    android:src="@drawable/back_icon"
+    android:layout_height="wrap_content"
+    android:paddingTop="15dp"
+    android:paddingBottom="15dp"
+    android:layout_marginLeft="4dp"
+    android:layout_weight="2"
+    android:id="@+id/imgBack" />
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+             android:layout_weight="6"/>
+        <ImageView
+            android:layout_width="0dp"
+            android:src="@drawable/cancel_icon"
+            android:layout_height="wrap_content"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1.6"
+            android:id="@+id/imgCancel" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginTop="15dp"
+        android:layout_weight="9">
+
+<RelativeLayout
+    android:layout_width="wrap_content"
+
+    android:layout_height="wrap_content">
+    <ImageView
+         android:layout_width="120dp"
+        android:layout_height="120dp"
+         android:src="@drawable/choose_pic"/>
+<aykhadma.droidahmed.com.aykhaama.controller.RoundedImageView
+    android:id="@+id/imgUser"
+    android:layout_width="120dp"
+    android:layout_height="120dp"
+    android:padding="8dp"
+    />
+
+    </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_weight="4">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:background="@drawable/edit_border"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="35dp"
+
+            android:layout_height="40dp">
+            <EditText
+                android:id="@+id/edUserName"
+                android:layout_width="match_parent"
+                android:background="@android:color/transparent"
+                android:hint="@string/user_name"
+                android:paddingLeft="15dp"
+                android:layout_height="match_parent" />
+        </RelativeLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_weight="4">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:background="@drawable/edit_border"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="15dp"
+
+            android:layout_height="40dp">
+            <EditText
+                android:id="@+id/edPass"
+                android:layout_width="match_parent"
+                android:background="@android:color/transparent"
+                android:hint="@string/password"
+                android:inputType="textPassword"
+                android:paddingLeft="15dp"
+                android:layout_height="match_parent" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_weight="4">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:background="@drawable/edit_border"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="15dp"
+
+            android:layout_height="40dp">
+            <EditText
+                android:id="@+id/edEmail"
+                android:layout_width="match_parent"
+                android:background="@android:color/transparent"
+                android:hint="@string/email"
+                android:inputType="textEmailAddress"
+                android:paddingLeft="15dp"
+                android:layout_height="match_parent" />
+        </RelativeLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_weight="4">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:background="@drawable/edit_border"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="15dp"
+
+            android:layout_height="40dp">
+            <EditText
+                android:id="@+id/edMobile"
+                android:layout_width="match_parent"
+                android:background="@android:color/transparent"
+                android:hint="@string/mobile_"
+                android:inputType="phone"
+                android:paddingLeft="15dp"
+                android:layout_height="match_parent" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_weight="4">
+
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:background="@drawable/edit_border"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="15dp"
+
+            android:layout_height="40dp"
+            >
+            <EditText
+                android:id="@+id/edCountry"
+                android:layout_width="match_parent"
+                android:background="@android:color/transparent"
+                android:hint="@string/country"
+                android:paddingLeft="15dp"
+                android:layout_height="match_parent" />
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:background="@drawable/edit_border"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="15dp"
+
+            android:layout_height="40dp">
+            <EditText
+                android:id="@+id/edCity"
+                android:layout_width="match_parent"
+                android:background="@android:color/transparent"
+                android:hint="@string/city"
+                android:paddingLeft="15dp"
+                android:layout_height="match_parent" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_weight="4">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:background="@drawable/edit_border"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="15dp"
+
+            android:layout_height="40dp">
+            <EditText
+                android:id="@+id/edRegion"
+                android:layout_width="match_parent"
+                android:background="@android:color/transparent"
+                android:hint="@string/region"
+                 android:paddingLeft="15dp"
+                android:layout_height="match_parent" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_weight="4">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:background="@drawable/edit_border"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="15dp"
+
+            android:layout_height="40dp">
+            <EditText
+                android:id="@+id/edArea"
+                android:layout_width="match_parent"
+                android:background="@android:color/transparent"
+                android:hint="@string/area"
+                 android:paddingLeft="15dp"
+                android:layout_height="match_parent" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_weight="4">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:background="@drawable/edit_border"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="15dp"
+
+            android:layout_height="40dp">
+            <EditText
+                android:id="@+id/edAvenue"
+                android:layout_width="match_parent"
+                android:background="@android:color/transparent"
+                android:hint="@string/avenue"
+                 android:paddingLeft="15dp"
+                android:layout_height="match_parent" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_weight="4">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:background="@drawable/edit_border"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="15dp"
+
+            android:layout_height="40dp">
+            <EditText
+                android:id="@+id/edStreet"
+                android:layout_width="match_parent"
+                android:background="@android:color/transparent"
+                android:hint="@string/street"
+                 android:paddingLeft="15dp"
+                android:layout_height="match_parent" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_weight="4">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:background="@drawable/edit_border"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="15dp"
+
+            android:layout_height="40dp">
+            <EditText
+                android:id="@+id/edBuildingNo"
+                android:layout_width="match_parent"
+                android:background="@android:color/transparent"
+                android:hint="@string/building_no"
+                 android:paddingLeft="15dp"
+                android:layout_height="match_parent" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_weight="4">
+
+
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+         android:paddingLeft="35dp"
+        android:paddingRight="35dp"
+        android:layout_marginBottom="20dp"
+       android:layout_marginTop="25dp"
+        android:layout_weight="2.8">
+
+
+
+        <Button
+            android:id="@+id/btnSignUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="45dp"
+            android:layout_marginRight="45dp"
+            android:text="@string/sign_up_"
+            android:textColor="#fff"
+            android:textSize="16sp"
+            android:background="@drawable/forget_password_bar"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_weight="1.8"/>
+
+
+
+
+
+ </LinearLayout>
+
+</ScrollView>

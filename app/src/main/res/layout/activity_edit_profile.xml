@@ -1,0 +1,199 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:background="#fff"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical"
+    tools:context="aykhadma.droidahmed.com.aykhaama.profile.EditProfile">
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/dark_red" >
+        <ImageView
+            android:id="@+id/imageSave"
+            android:layout_width="wrap_content"
+            android:layout_height="31dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="16dp"
+            android:src="@drawable/save_icon" />
+        <aykhadma.droidahmed.com.aykhaama.controller.MyTextView
+            android:id="@+id/title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textAllCaps="true"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#fff"
+            android:textStyle="bold" />
+
+        <aykhadma.droidahmed.com.aykhaama.controller.MyTextView
+             android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="#fff"
+            android:textSize="22sp"
+            android:layout_marginLeft="8dp"
+            android:text="@string/edit_profile"
+             android:visibility="visible"/>
+        <aykhadma.droidahmed.com.aykhaama.controller.MyTextView
+            android:id="@+id/textTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:textStyle="bold"
+            android:layout_marginLeft="8dp"
+            android:textSize="26sp"
+            android:textColor="#fff"
+            android:layout_marginTop="10dp"
+            android:visibility="gone"/>
+        <ImageView
+            android:id="@+id/imageCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="26dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="16dp"
+            android:src="@drawable/cancel_icon" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="130dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_height="130dp">
+        <ImageView
+            android:layout_width="130dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/profile_pic"
+            android:layout_height="130dp" />
+        <aykhadma.droidahmed.com.aykhaama.controller.RoundedImageView
+            android:id="@+id/imgUser"
+            android:layout_width="129dp"
+            android:layout_height="129dp"
+            android:padding="1dp"
+            />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="15dp"
+        android:background="#E6E7E9"
+        android:layout_height="wrap_content">
+        <aykhadma.droidahmed.com.aykhaama.controller.MyTextView
+            android:textColor="#AF0A2C"
+            android:textSize="18sp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+             android:layout_marginLeft="10dp"
+            android:layout_gravity="center_vertical"
+            android:text="@string/basic_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <aykhadma.droidahmed.com.aykhaama.controller.MyTextView
+            android:textColor="#000"
+            android:textSize="16sp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center_vertical"
+            android:text="@string/user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/edUserName"
+            android:textColor="#000"
+            android:textSize="16sp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_gravity="center_vertical"
+             android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <aykhadma.droidahmed.com.aykhaama.controller.MyTextView
+            android:textColor="#000"
+            android:textSize="16sp"
+            android:paddingTop="8dp"
+            android:layout_marginRight="10dp"
+            android:paddingBottom="8dp"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center_vertical"
+            android:text="@string/email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/edEmail"
+            android:textColor="#000"
+            android:textSize="16sp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_gravity="center_vertical"
+            android:inputType="textEmailAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <aykhadma.droidahmed.com.aykhaama.controller.MyTextView
+            android:textColor="#000"
+            android:textSize="16sp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"
+            android:layout_gravity="center_vertical"
+            android:text="@string/phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/edPhone"
+            android:textColor="#000"
+            android:textSize="18sp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_gravity="center_vertical"
+            android:inputType="phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+             />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="#E6E7E9"
+        android:layout_marginTop="15dp"
+        android:layout_height="wrap_content"></LinearLayout>
+
+</LinearLayout>

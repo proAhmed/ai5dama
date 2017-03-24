@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@drawable/white_background"
+     android:layout_margin="2dp"
+    android:layout_height="wrap_content">
+
+<ImageView
+    android:layout_width="160dp"
+    android:src="@drawable/shoping_image"
+    android:layout_height="120dp"
+    android:layout_gravity="center_horizontal"
+
+    android:id="@+id/imgProduct" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="160dp"
+          >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:layout_gravity="center_horizontal"
+            android:text="chicken"
+            android:id="@+id/tvProductName" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="3dp"
+            android:layout_weight="2">
+
+            <TextView
+                 android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="Quantity"
+                android:layout_weight="2"/>
+
+            <ImageView
+                android:id="@+id/imgWholeSaleDetailsDec"
+                android:layout_width="0dp"
+                 android:layout_height="match_parent"
+                android:layout_weight="0.4"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.15"/>
+            <RelativeLayout
+                android:id="@+id/btnWholeSaleDetails"
+                android:layout_width="0dp"
+                android:background="@drawable/quantity_bar"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:layout_margin="4dp"
+                android:layout_weight="3">
+                <TextView
+                    android:id="@+id/tvQuantity"
+                    android:layout_width="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="1"
+                    android:textColor="#fff"
+                    android:gravity="center_horizontal"
+                    android:layout_height="match_parent"/>
+            </RelativeLayout>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.15"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:layout_weight="2">
+
+            <TextView
+                android:text="Price"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.2"/>
+
+
+            <RelativeLayout
+
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/quantity_bar"
+                android:layout_margin="4dp"
+                android:gravity="right"
+                android:layout_weight="3">
+                <TextView
+                    android:id="@+id/tvPrice"
+                    android:layout_centerInParent="true"
+                    android:layout_width="wrap_content"
+                    android:text="KD"
+                    android:textColor="#fff"
+                    android:layout_marginRight="20dp"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.15"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:layout_weight="2">
+
+            <TextView
+                android:text="Code"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.2"/>
+
+
+            <RelativeLayout
+
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/quantity_bar"
+                android:layout_margin="4dp"
+                 android:layout_weight="3">
+                <TextView
+                    android:id="@+id/tvCode"
+                    android:layout_centerInParent="true"
+                    android:layout_width="wrap_content"
+                    android:text="2485412"
+                    android:textColor="#fff"
+                    android:layout_marginRight="20dp"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.15"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:layout_weight="2">
+
+
+            <Button
+                android:id="@+id/btnBuyNow"
+android:text="buy now"
+                android:textColor="#fff"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/buy_now_bar"
+                android:layout_margin="4dp"
+                android:layout_weight="3"/>
+
+             <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.15"/>
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/add_cart_icon"
+                android:layout_weight="1"
+                android:id="@+id/imgAdd" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.15"/>
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/favorite_icon"
+                android:layout_weight="1"
+                android:id="@+id/imgFav" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

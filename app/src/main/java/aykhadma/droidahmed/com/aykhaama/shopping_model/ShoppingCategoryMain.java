@@ -1,0 +1,46 @@
+package aykhadma.droidahmed.com.aykhaama.shopping_model;
+
+import java.util.ArrayList;
+
+/**
+ * Created by ahmed on 10/31/2016.
+ */
+public class ShoppingCategoryMain {
+
+    private boolean success;
+    private Object error;
+    private ArrayList<ShoppingCategoryItems> data;
+
+    public ShoppingCategoryMain() {
+    }
+
+    public ShoppingCategoryMain(boolean success, Object error, ArrayList<ShoppingCategoryItems> data) {
+        this.success = success;
+        this.error = error;
+        this.data = data;
+    }
+
+    public boolean isSuccess() {
+        return success;
+    }
+
+    public void setSuccess(boolean success) {
+        this.success = success;
+    }
+
+    public Object getError() {
+        return error;
+    }
+
+    public void setError(Object error) {
+        this.error = error;
+    }
+
+    public ArrayList<ShoppingCategoryItems> getData() {
+        return data;
+    }
+
+    public void setData(ArrayList<ShoppingCategoryItems> data) {
+        this.data = data;
+    }
+}

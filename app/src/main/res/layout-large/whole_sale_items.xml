@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="#D2D4D3"
+    android:layout_height="wrap_content">
+<LinearLayout
+    android:id="@+id/linWhole"
+    android:layout_width="match_parent"
+    android:background="@drawable/white_background"
+     android:orientation="vertical"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/imgWholeSale"
+        android:layout_width="350dp"
+        android:layout_height="110dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/whole_sale"/>
+    <TextView
+        android:id="@+id/tvWholeItems"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+         android:layout_marginBottom="2dp"
+        android:layout_gravity="center_horizontal"
+        android:text="Men Clothes"/>
+</LinearLayout>
+</LinearLayout>

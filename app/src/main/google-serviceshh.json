@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "994838791712",
+    "firebase_url": "https://notifications-36ebf.firebaseio.com",
+    "project_id": "notifications-36ebf",
+    "storage_bucket": "notifications-36ebf.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:994838791712:android:84182be3b9bf8ba4",
+        "android_client_info": {
+          "package_name": "usagecheck.droidahmed.com.venteparis"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "994838791712-397s5ijuo66plnbfc18prbbl02c3kbbt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDMsXzypYmnD4Jdgo-1XSawhsFQSKgnSfk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

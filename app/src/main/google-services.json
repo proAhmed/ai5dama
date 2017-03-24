@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "477757680477",
+    "firebase_url": "https://venteparis-95017.firebaseio.com",
+    "project_id": "venteparis-95017",
+    "storage_bucket": "venteparis-95017.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:477757680477:android:84182be3b9bf8ba4",
+        "android_client_info": {
+          "package_name": "aykhadma.droidahmed.com.aykhaama"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "477757680477-s3rl8ipq4ou9fuchiqf031k9gunnoh0d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAHBYvtpihc6lf5KjJhtsszeW0ECpzXmxo"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

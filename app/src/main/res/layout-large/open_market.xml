@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#fff"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/linImage"
+        android:layout_width="match_parent"
+        android:layout_height="260dp"
+        android:orientation="horizontal"
+         >
+
+        <ImageView
+            android:id="@+id/imgShopMain2"
+            android:layout_width="0dp"
+
+            android:src="@drawable/slide_open_market"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+    </LinearLayout>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/reOpenMarket"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/linImage"
+
+        android:background="@android:color/transparent"
+        android:cacheColorHint="@android:color/transparent"
+        />
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:clickable="true"
+        android:src="@drawable/fab_add"
+         android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="15dp"
+
+          app:rippleColor="#FFF" />
+
+ </RelativeLayout>

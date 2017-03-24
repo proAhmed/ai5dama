@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="#fff"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_indicator"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        tools:listitem="@layout/offers_pager_item"
+        android:layout_above="@+id/linearLayout">
+    </android.support.v4.view.ViewPager>
+    <LinearLayout
+         android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="#000"
+        android:orientation="horizontal"
+        android:id="@+id/linearLayout"
+         android:layout_above="@+id/viewPagerCountDots">
+<ImageView
+    android:src="@drawable/call_icon"
+    android:layout_width="30dp"
+    android:layout_marginLeft="15dp"
+    android:layout_marginRight="15dp"
+    android:layout_gravity="center_vertical"
+
+    android:layout_height="wrap_content"
+    android:id="@+id/imgCall" />
+
+        <ImageView
+            android:src="@drawable/share_icon"
+            android:layout_width="32dp"
+            android:layout_marginLeft="15dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="85dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/imgShare" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:background="#FFCB05"
+            android:layout_margin="7dp"
+            android:layout_height="wrap_content">
+<aykhadma.droidahmed.com.aykhaama.controller.MyTextView
+    android:id="@+id/tvOffersViews"
+    android:layout_width="wrap_content"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:layout_marginTop="2dp"
+     android:text="3000"
+    android:textSize="16sp"
+    android:textColor="#000"
+    android:layout_height="wrap_content" />
+
+            <aykhadma.droidahmed.com.aykhaama.controller.MyTextView
+                 android:layout_width="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                 android:layout_marginTop="1dp"
+                android:text="views"
+                android:textSize="14sp"
+                android:textColor="#000"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/viewPagerCountDots"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+       android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal" />
+</RelativeLayout>

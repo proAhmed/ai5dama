@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="#fff"
+    android:padding="2dp"
+    android:id="@+id/linCategory"
+    android:layout_height="@dimen/_120sdp">
+
+
+
+    <com.makeramen.roundedimageview.RoundedImageView
+    android:id="@+id/imgHome"
+    android:layout_width="@dimen/_120sdp"
+    android:scaleType="fitCenter"
+    app:riv_corner_radius="25dip"
+    android:layout_margin="2dp"
+    android:layout_height="@dimen/_120sdp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:background="#80000000"
+        android:layout_height="wrap_content">
+    <aykhadma.droidahmed.com.aykhaama.controller.MyTextView
+        android:id="@+id/tvCategory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#fff"
+        android:textSize="16sp"
+        android:layout_marginTop="4dp"/>
+
+    </LinearLayout>
+</RelativeLayout>

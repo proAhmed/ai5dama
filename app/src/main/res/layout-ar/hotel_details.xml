@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="#fff"
+    android:layout_height="match_parent">
+    <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="#fff"
+        android:layout_weight="7"  >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="15dp"
+            android:orientation="vertical">
+<aykhadma.droidahmed.com.aykhaama.controller.MyTextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textSize="24sp"
+
+    android:gravity="center_horizontal"
+    android:textColor="#000"
+    android:text="Royal Garden House_El Kuwit \n Five Stars"/>
+
+            <ImageView
+                android:id="@+id/thumbnail"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+
+
+                android:src="@drawable/slide" />
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+    <android.support.v4.view.ViewPager
+         android:id="@+id/pager"
+         android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        >
+    </android.support.v4.view.ViewPager>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_marginTop="5dp"
+        android:layout_weight="3.5">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+    <aykhadma.droidahmed.com.aykhaama.controller.MyTextView
+        android:layout_width="0dp"
+        android:layout_weight="0.5"
+        android:layout_height="wrap_content"
+        />
+    <aykhadma.droidahmed.com.aykhaama.controller.MyTextView
+        android:layout_width="0dp"
+        android:layout_weight="2"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:layout_marginRight="20dp"
+        android:layout_gravity="center_vertical"
+        android:textSize="18sp"
+        android:layout_marginLeft="20dp"
+        android:text="@string/room"/>
+    <RelativeLayout
+
+        android:layout_width="0dp"
+        android:layout_weight="4"
+        android:layout_height="35dp"
+        android:background="@drawable/quantity_bar"
+        android:layout_margin="4dp"
+        >
+        <aykhadma.droidahmed.com.aykhaama.controller.MyTextView
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#fff"
+            android:text="@string/select_room"/>
+    </RelativeLayout>
+    <aykhadma.droidahmed.com.aykhaama.controller.MyTextView
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+       />
+</LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="0.25"
+            android:layout_height="0dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+            <aykhadma.droidahmed.com.aykhaama.controller.MyTextView
+                android:layout_width="0dp"
+                android:layout_weight="0.5"
+                android:layout_height="wrap_content"
+                />
+            <aykhadma.droidahmed.com.aykhaama.controller.MyTextView
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:layout_marginRight="20dp"
+                android:layout_gravity="center_vertical"
+                android:textSize="18sp"
+                android:layout_marginLeft="20dp"
+                android:text="@string/check_in"/>
+            <RelativeLayout
+
+                android:layout_width="0dp"
+                android:layout_weight="4"
+                android:layout_height="35dp"
+                android:background="@drawable/quantity_bar"
+                android:layout_margin="4dp"
+                >
+                <aykhadma.droidahmed.com.aykhaama.controller.MyTextView
+                    android:layout_centerInParent="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#fff"
+                    android:text="@string/date_format"/>
+            </RelativeLayout>
+            <aykhadma.droidahmed.com.aykhaama.controller.MyTextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+            <aykhadma.droidahmed.com.aykhaama.controller.MyTextView
+                android:layout_width="0dp"
+                android:layout_weight="0.5"
+                android:layout_height="wrap_content"
+                />
+            <aykhadma.droidahmed.com.aykhaama.controller.MyTextView
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:layout_marginRight="20dp"
+                android:layout_gravity="center_vertical"
+                android:textSize="18sp"
+                android:layout_marginLeft="20dp"
+                android:text="@string/check_out"/>
+            <RelativeLayout
+
+                android:layout_width="0dp"
+                android:layout_weight="4"
+                android:layout_height="35dp"
+                android:background="@drawable/quantity_bar"
+                android:layout_margin="4dp"
+                >
+                <aykhadma.droidahmed.com.aykhaama.controller.MyTextView
+                    android:layout_centerInParent="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#fff"
+                    android:text="@string/date_format"/>
+            </RelativeLayout>
+            <aykhadma.droidahmed.com.aykhaama.controller.MyTextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="0.25"
+            android:layout_height="0dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+            <aykhadma.droidahmed.com.aykhaama.controller.MyTextView
+                android:layout_width="0dp"
+                android:layout_weight="0.5"
+                android:layout_height="wrap_content"
+                />
+            <aykhadma.droidahmed.com.aykhaama.controller.MyTextView
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:layout_marginRight="10dp"
+                android:layout_gravity="center_vertical"
+                android:textSize="18sp"
+                android:layout_marginLeft="10dp"
+                android:text="@string/booking_now"/>
+          <ImageView
+              android:layout_width="0dp"
+              android:layout_weight="1.5"
+              android:layout_height="wrap_content"
+              android:src="@drawable/booking_icon"/>
+
+            <ImageView
+                android:id="@+id/imgFav"
+                android:layout_width="0dp"
+                android:layout_weight="1.5"
+                android:layout_height="wrap_content"
+                android:src="@drawable/favorite_icon_2"/>
+            <aykhadma.droidahmed.com.aykhaama.controller.MyTextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="0.3"
+            android:layout_height="0dp"/>
+    </LinearLayout>
+
+
+</LinearLayout>
